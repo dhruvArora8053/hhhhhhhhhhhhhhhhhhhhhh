@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <!-- we need to tell the browser that this uses the html document -->
-<html>
+<html lang="en">
+  <!-- on what language this webpage has been written -->
   <head>
+    <meta charset="UTF-8" />
+    <!-- metadata means the data about the data -->
+    <!-- utf-8 all the siple characters that we use in the english language -->
+
     <title>The Basic Language of the web: HTML</title>
   </head>
   <!-- head tag is for the things that are not visible in the browser window -->
@@ -16,54 +21,97 @@
 
     <h1>📘 The Code Magazine</h1>
     <!-- it's always a good practice just to have one h1 heading, and for other ones we can have multiple of them -->
-    <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
-    <!-- We should not use b tag anymore becuause it doesn't have any semantic meaning so instead use strong tag, and for i tag use em -->
 
-    <h2>The Basic Language of the Web: HTML</h2>
-    <p>
-      All modern websites and web applications are built using three
-      <em>fundamental</em>
-      technologies: HTML, CSS and Javascript. These are the languages of the
-      web.
-    </p>
+    <header>
+      <nav>
+        <a href="blog.html">Blog</a>
+        <a href="#">Challenges</a>
+        <a href="#">Flexbox</a>
+        <a href="#">CSS Grid</a>
+      </nav>
+      <!-- if we don't want it to go anywhere just use # -->
+      <!-- nav tag stands for navigation -->
+    </header>
+    <!-- header tag means the top part of the web document -->
 
-    <p>
-      In this post, let's focus on HTML. We will learn what HTML is all about,
-      and why you too should learn it.
-    </p>
+    <article>
+      <header>
+        <h2>The Basic Language of the Web: HTML</h2>
+        <img src="laura-jones.jpg" alt="author image" width="50" height="50" />
 
-    <h3>What is HTML?</h3>
-    <p>
-      HTML stands for <strong>H</strong>yper<strong>T</strong>ext
-      <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup language
-      that web developers use to structure and describe the content of a webpage
-      (not a programming language).
-    </p>
-    <p>
-      HTML consists of elements that describe different types of content:
-      paragraphs, links, headings, images, video, etc. Web browsers understand
-      HTML and render HTML code as websites.
-    </p>
+        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <!-- We should not use b tag anymore becuause it doesn't have any semantic meaning so instead use strong tag, and for i tag use em -->
 
-    <p>In HTML, each element is made up of 3 parts:</p>
-    <ol>
-      <li>The opening tag</li>
-      <li>The closing tag</li>
-      <li>The actual element</li>
-    </ol>
+        <img
+          src="post-img.jpg"
+          alt="HTML code on a screen"
+          width="500"
+          height="200"
+        />
+        <!-- attributes basically are pieces of data which we can use to describe elements -->
+        <!-- width and height should be half of image pixels -->
+      </header>
 
-    <h3>Why should you learn HTML?</h3>
-    <p>
-      There are countless reasons for learning the fundamental language of the
-      web. Here are 5 of them:
-    </p>
+      <p>
+        All modern websites and web applications are built using three
+        <em>fundamental</em>
+        technologies: HTML, CSS and Javascript. These are the languages of the
+        web.
+      </p>
 
-    <ul>
-      <li>To be able to use the fundamental web dev language</li>
-      <li>To hand-craft beautiful</li>
-      <li>websites instead of relying on tools like Worpress or Wix</li>
-      <li>To build web applications To impress friends</li>
-      <li>To have fun 😃</li>
-    </ul>
+      <p>
+        In this post, let's focus on HTML. We will learn what HTML is all about,
+        and why you too should learn it.
+      </p>
+
+      <h3>What is HTML?</h3>
+      <p>
+        HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+        <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+        language that web developers use to structure and describe the content
+        of a webpage (not a programming language).
+      </p>
+      <p>
+        HTML consists of elements that describe different types of content:
+        paragraphs, links, headings, images, video, etc. Web browsers understand
+        HTML and render HTML code as websites.
+      </p>
+
+      <p>In HTML, each element is made up of 3 parts:</p>
+      <ol>
+        <li>The opening tag</li>
+        <li>The closing tag</li>
+        <li>The actual element</li>
+      </ol>
+
+      <p>
+        You can learn more at
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank"
+          >MDN Web Docs</a
+        >.
+      </p>
+
+      <h3>Why should you learn HTML?</h3>
+      <p>
+        There are countless reasons for learning the fundamental language of the
+        web. Here are 5 of them:
+      </p>
+
+      <ul>
+        <li>To be able to use the fundamental web dev language</li>
+        <li>To hand-craft beautiful</li>
+        <li>websites instead of relying on tools like Worpress or Wix</li>
+        <li>To build web applications To impress friends</li>
+        <li>To have fun 😃</li>
+      </ul>
+    </article>
+    <!-- article tag is yet another container element, it is used for like a computer is an article or a pen or a phone so all of these are articles and if somehow we needed to represent a computer in HTML then article would also be a good element for that -->
+
+    <footer>
+      Copyright &copy; 2027 by the Code Magazine.
+      <!-- it is called html entity -->
+    </footer>
   </body>
 </html>
