@@ -1,0 +1,65 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* article header p {
+  font-style: italic;
+} */
+/* we should not use descendant selectors that much because it could lead to some potential design problems becuase the same rule could be applied to many places */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+/* we can only add id name only once, so if we need to reuse a name multiple times then we need to use classes for that so mosty use classes to be prepared for future changes  */
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
