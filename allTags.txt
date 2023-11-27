@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link href="styles.css" rel="stylesheet" />
+<title>The Basic Language of the web: HTML</title>
+<body>
+<h1>
+<header>
+<nav>
+<article>
+<p>
+<b>
+<em>
+&copy; --> html entitiy
+<ol>
+<ul>
+<li>
+<img
+            src="img/related-1.jpg"
+            width="75"
+            height="75"
+            alt="some image"
+          />
+   <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank"
+          >MDN Web Docs</a
+        >.
+<aside>
+<footer>
+
+<!-- we need to tell the browser that this uses the html document -->
+
+<html lang="en">
+<!-- on what language this webpage has been written -->
+
+<meta charset="UTF-8" />
+<!-- metadata means the data about the data -->
+<!-- utf-8 all the simple characters that we use in the english language -->
+
+<!-- head tag is for the things that are not visible in the browser window -->
+
+<!-- nav tag stands for navigation -->
+
+<!-- header tag means the top part of the web document -->
+
+<!-- article tag is yet another container element, it is used for like a computer is an article or a pen or a phone so all of these are articles and if somehow we needed to represent a computer in HTML then article would also be a good element for that -->
+
+<!-- the aside element is usually used for some secondary information that compliments the information in the main part of the page -->

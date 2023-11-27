@@ -1,0 +1,3 @@
+1.     <!-- it's always a good practice just to have one h1 heading, and for other ones we can have multiple of them -->
+
+2. <!-- width and height should be half of image pixels -->
