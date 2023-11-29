@@ -13,154 +13,162 @@
   <!-- head tag is for the things that are not visible in the browser window -->
 
   <body>
-    <!-- <h1>The Basic Language of the Web: HTML</h1>
+    <div class="container">
+      <!-- <h1>The Basic Language of the Web: HTML</h1>
     <h2>The Basic Language of the Web: HTML</h2>
     <h3>The Basic Language of the Web: HTML</h3>
     <h4>The Basic Language of the Web: HTML</h4>
     <h5>The Basic Language of the Web: HTML</h5>
     <h6>The Basic Language of the Web: HTML</h6> -->
 
-    <h1>📘 The Code Magazine</h1>
-    <!-- it's always a good practice just to have one h1 heading, and for other ones we can have multiple of them -->
+      <header class="main-header">
+        <h1>📘 The Code Magazine</h1>
+        <!-- it's always a good practice just to have one h1 heading, and for other ones we can have multiple of them -->
 
-    <header>
-      <nav>
-        <a href="blog.html">Blog</a>
-        <a href="#">Challenges</a>
-        <a href="#">Flexbox</a>
-        <a href="#">CSS Grid</a>
-      </nav>
-      <!-- if we don't want it to go anywhere just use # -->
-      <!-- nav tag stands for navigation -->
-    </header>
-    <!-- header tag means the top part of the web document -->
-
-    <article>
-      <header>
-        <h2>The Basic Language of the Web: HTML</h2>
-        <img
-          src="img/laura-jones.jpg"
-          alt="author image"
-          width="50"
-          height="50"
-        />
-
-        <p id="author">
-          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
-        </p>
-        <!-- We should not use b tag anymore becuause it doesn't have any semantic meaning so instead use strong tag, and for i tag use em -->
-
-        <img
-          src="img/post-img.jpg"
-          alt="HTML code on a screen"
-          width="500"
-          height="200"
-        />
-        <!-- attributes basically are pieces of data which we can use to describe elements -->
-        <!-- width and height should be half of image pixels -->
+        <nav>
+          <a href="blog.html">Blog</a>
+          <a href="#">Challenges</a>
+          <a href="#">Flexbox</a>
+          <a href="#">CSS Grid</a>
+        </nav>
+        <!-- if we don't want it to go anywhere just use # -->
+        <!-- nav tag stands for navigation -->
       </header>
+      <!-- header tag means the top part of the web document -->
 
-      <p>
-        All modern websites and web applications are built using three
-        <em>fundamental</em>
-        technologies: HTML, CSS and Javascript. These are the languages of the
-        web.
-      </p>
-
-      <p>
-        In this post, let's focus on HTML. We will learn what HTML is all about,
-        and why you too should learn it.
-      </p>
-
-      <h3>What is HTML?</h3>
-      <p>
-        HTML stands for <strong>H</strong>yper<strong>T</strong>ext
-        <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
-        language that web developers use to structure and describe the content
-        of a webpage (not a programming language).
-      </p>
-      <p>
-        HTML consists of elements that describe different types of content:
-        paragraphs, links, headings, images, video, etc. Web browsers understand
-        HTML and render HTML code as websites.
-      </p>
-
-      <p>In HTML, each element is made up of 3 parts:</p>
-      <ol>
-        <li>The opening tag</li>
-        <li>The closing tag</li>
-        <li>The actual element</li>
-      </ol>
-
-      <p>
-        You can learn more at
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-          target="_blank"
-          >MDN Web Docs</a
-        >.
-      </p>
-
-      <h3>Why should you learn HTML?</h3>
-      <p>
-        There are countless reasons for learning the fundamental language of the
-        web. Here are 5 of them:
-      </p>
-
-      <ul>
-        <li>To be able to use the fundamental web dev language</li>
-        <li>To hand-craft beautiful</li>
-        <li>websites instead of relying on tools like Worpress or Wix</li>
-        <li>To build web applications To impress friends</li>
-        <li>To have fun 😃</li>
-      </ul>
-    </article>
-    <!-- article tag is yet another container element, it is used for like a computer is an article or a pen or a phone so all of these are articles and if somehow we needed to represent a computer in HTML then article would also be a good element for that -->
-
-    <aside>
-      <h4>Related Posts</h4>
-      <ul class="related">
-        <li>
+      <article>
+        <p>Test</p>
+        <header>
+          <h2>The Basic Language of the Web: HTML</h2>
           <img
-            src="img/related-1.jpg"
-            width="75"
-            height="75"
-            alt="some image"
+            src="img/laura-jones.jpg"
+            alt="author image"
+            width="50"
+            height="50"
           />
-          <a href="#">How to Learn Web Development</a>
-          <p class="related-author">By Jonas Scmedtmann</p>
-        </li>
 
-        <li>
+          <p id="author">
+            Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+          </p>
+          <!-- We should not use b tag anymore becuause it doesn't have any semantic meaning so instead use strong tag, and for i tag use em -->
+
           <img
-            src="img/related-1.jpg"
-            width="75"
-            height="75"
-            alt="some image"
+            src="img/post-img.jpg"
+            alt="HTML code on a screen"
+            width="500"
+            height="200"
+            class="post-img"
           />
-          <a href="#">How to Learn Web Development</a>
-          <p class="related-author">By Jonas Scmedtmann</p>
-        </li>
+          <!-- attributes basically are pieces of data which we can use to describe elements -->
+          <!-- width and height should be half of image pixels -->
+        </header>
 
-        <li>
-          <img
-            src="img/related-1.jpg"
-            width="75"
-            height="75"
-            alt="some image"
-          />
-          <a href="#">How to Learn Web Development</a>
-          <p class="related-author">By Jonas Scmedtmann</p>
-        </li>
-      </ul>
-    </aside>
-    <!-- the aside element is usually used for some secondary information that compliments the information in the main part of the page -->
+        <p>
+          All modern websites and web applications are built using three
+          <em>fundamental</em>
+          technologies: HTML, CSS and Javascript. These are the languages of the
+          web.
+        </p>
 
-    <footer>
-      <p id="copyright">
-        Copyright &copy; 2027 by the Code Magazine.
-        <!-- it is called html entity -->
-      </p>
-    </footer>
+        <p>
+          In this post, let's focus on HTML. We will learn what HTML is all
+          about, and why you too should learn it.
+        </p>
+
+        <h3>What is HTML?</h3>
+        <p>
+          HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+          <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+          language that web developers use to structure and describe the content
+          of a webpage (not a programming language).
+        </p>
+        <p>
+          HTML consists of elements that describe different types of content:
+          paragraphs, links, headings, images, video, etc. Web browsers
+          understand HTML and render HTML code as websites.
+        </p>
+
+        <p>In HTML, each element is made up of 3 parts:</p>
+        <ol>
+          <li>The opening tag</li>
+          <li>The closing tag</li>
+          <li>The actual element</li>
+        </ol>
+
+        <p>
+          You can learn more at
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+            >MDN Web Docs</a
+          >.
+        </p>
+
+        <h3>Why should you learn HTML?</h3>
+        <p>
+          There are countless reasons for learning the fundamental language of
+          the web. Here are 5 of them:
+        </p>
+
+        <ul>
+          <li class="first-li">
+            To be able to use the fundamental web dev language
+          </li>
+          <li>To hand-craft beautiful</li>
+          <li>websites instead of relying on tools like Worpress or Wix</li>
+          <li>To build web applications To impress friends</li>
+          <li>To have fun 😃</li>
+        </ul>
+      </article>
+      <!-- article tag is yet another container element, it is used for like a computer is an article or a pen or a phone so all of these are articles and if somehow we needed to represent a computer in HTML then article would also be a good element for that -->
+
+      <aside>
+        <h4>Related Posts</h4>
+        <ul class="related">
+          <li class="first-li">
+            <img
+              src="img/related-1.jpg"
+              width="75"
+              height="75"
+              alt="some image"
+            />
+            <a href="#">How to Learn Web Development</a>
+            <p class="related-author">By Jonas Scmedtmann</p>
+          </li>
+
+          <li>
+            <img
+              src="img/related-1.jpg"
+              width="75"
+              height="75"
+              alt="some image"
+            />
+            <a href="#">How to Learn Web Development</a>
+            <p class="related-author">By Jonas Scmedtmann</p>
+          </li>
+
+          <li>
+            <img
+              src="img/related-1.jpg"
+              width="75"
+              height="75"
+              alt="some image"
+            />
+            <a href="#">How to Learn Web Development</a>
+            <p class="related-author">By Jonas Scmedtmann</p>
+          </li>
+        </ul>
+      </aside>
+      <!-- the aside element is usually used for some secondary information that compliments the information in the main part of the page -->
+
+      <footer>
+        <p id="copyright" class="copyright text">
+          Copyright &copy; 2027 by the Code Magazine.
+          <!-- it is called html entity -->
+        </p>
+      </footer>
+    </div>
+
+    <button>❣️ Like</button>
   </body>
 </html>
