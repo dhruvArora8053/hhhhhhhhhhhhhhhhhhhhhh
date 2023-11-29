@@ -193,7 +193,7 @@ dispaly: block,
 body, main, header, footer, section, nav, aside, div, h1-h6, p, ul, ol, li, etc.
 
 display: inline, 
-a, strong, em, button, etc.
+a, strong, em, button, pseudo-elements etc.
 
 display: inline-block,
 img
@@ -222,4 +222,45 @@ button {
 
   bottom: 50px;
   right: 50px;
+}
+
+/* Pseudo Elements:- it is the elment which is not actually element in the html but it as if it was an element that we can select */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2::first-letter {
+  font-size: 80px;
+}
+
+p::first-line {
+  color: red;
+}
+
+/* sibling selector */
+h3 + p::first-line {
+  color: blue;
+}
+
+/* after and before pseudo elements:
+before: first child of element
+after: last child of element
+*/
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
 }
