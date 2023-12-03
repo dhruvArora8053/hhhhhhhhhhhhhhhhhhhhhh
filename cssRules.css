@@ -105,3 +105,11 @@ h2::after {
   top: -15px;
   right: -25px;
 }
+*/
+
+11.
+.open .hidden-box,
+      .open .text {
+        display: block;
+      }
+      /* so if open is present here on the parent element 'item', the the above selector will apply, because if open is not present on the parent element then ofcourse nothing is going to happen because above selector will not be applied anywhere */
