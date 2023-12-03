@@ -1,0 +1,2 @@
+1. open color --> used for color picking
+2. hero icons --> used for svg icons
