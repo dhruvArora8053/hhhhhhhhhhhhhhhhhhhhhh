@@ -41,7 +41,7 @@ h1,
 h2,
 h3 {
   color: #1098ad;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 h1 {
@@ -203,7 +203,7 @@ nav a:link {
   background-color: orangered;
   display: inline-block;
   margin-right: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px;z */
 }
 
 nav a:link:last-child {
@@ -264,3 +264,11 @@ h2::after {
   top: -15px;
   right: -25px;
 }
+
+/* FlexBox */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
