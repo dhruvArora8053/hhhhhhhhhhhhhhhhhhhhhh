@@ -1,9 +1,32 @@
- .open .hidden-box {
+1. * 
+2. body
+3. .container
+5. footer p
+6. #author
+
+/* Pseudo classes */
+4. li:last-child
+   li:first-child
+7. li:nth-child(2)
+8. li:nth-child(odd)
+10. a:link,
+11. a:visited
+12. a:hover
+13. a:active
+9. article p:first-child
+14. nav a:link
+15. nav a:link:last-child
+
+// Pseudo Element
+16. h1::first-letter
+17. h2::after 
+ 
+18. .open .hidden-box {
         display: block;
       }
 /* so if ope is present here on the parent element 'item', the the above selector will apply, because if open is not present on the parent element then ofcourse nothing is going to happen because above selector will not be applied anywhere */
 
- .open .hidden-box,
+19. .open .hidden-box,
       .open .text {
         display: block;
       }

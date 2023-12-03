@@ -1,0 +1,107 @@
+1.     <!-- it's always a good practice just to have one h1 heading, and for other ones we can have multiple of them -->
+
+2. <!-- width and height should be half of image pixels -->
+
+3. * {
+  /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+}
+/* to give all the elements same property using inheritance */
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  /* margin: 0; */
+  /* margin is not a property that gets inherited to it's child because it is not of text type so you can use it on the global selector */
+
+  position: relative;
+}
+/* not all properties get inherited, they are mostly about text */
+
+4.
+/* article header p {
+  font-style: italic;
+} */
+/* we should not use descendant selectors that much because it could lead to some potential design problems becuase the same rule could be applied to many places */
+
+5.
+#copyright {
+  font-size: 16px;
+}
+/* we can only add id name only once, so if we need to reuse a name multiple times then we need to use classes for that so mosty use classes to be prepared for future changes  */
+
+6. 
+/* Priority:
+0. important! keyword
+1. inline style
+2. id selector
+3. pseudo class
+4. element slector
+5. universal selector
+
+--> if they are same then they use cascade rules
+--> use important! only if you really need it
+*/
+
+7.
+.post-img {
+  width: 100%;
+  /* responsiveness relative to width of the parent container width of the parent container */
+  height: auto;
+  /* adjust according to width */
+}
+
+8.
+/* total height= borderTop+ paddingTop+ contentArea+ paddingBottom+ borderBottom
+Same goes for width
+*/
+
+9.
+/* 
+dispaly: block,
+body, main, header, footer, section, nav, aside, div, h1-h6, p, ul, ol, li, etc.
+
+display: inline, 
+a, strong, em, button, pseudo-elements etc.
+
+display: inline-block,
+img
+*/
+
+10.
+/* Pseudo Elements:- it is the elment which is not actually element in the html but it as if it was an element that we can select */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2::first-letter {
+  font-size: 80px;
+}
+
+p::first-line {
+  color: red;
+}
+
+/* sibling selector */
+h3 + p::first-line {
+  color: blue;
+}
+
+/* after and before pseudo elements:
+before: first child of element
+after: last child of element
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
+}
