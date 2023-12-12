@@ -1,2 +1,4 @@
 1. open color --> used for color picking
 2. hero icons --> used for svg icons
+3. maketintsandshades.com --> tints and shades generator
+4. coolors --> contrast checker
