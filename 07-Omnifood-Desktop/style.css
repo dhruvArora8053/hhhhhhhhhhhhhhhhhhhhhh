@@ -48,33 +48,9 @@ body {
   color: #555;
 }
 
-.test {
-  background-color: red;
-  /* width: 1000px; */
-  max-width: 1000px;
-  /* if the container width is larger than the specified max-width then the width of the element is equal the value that was specified for max-width however, if the container width is less than the specified max width then the width of the element will be 100% of the container element width */
-
-  max-width: 50rem;
-  padding: 4rem;
-  color: #fff;
-  font-size: 2rem;
-  /* default: 1rem = 16px ==> 50rem=800px */
-}
-
-.section-hero {
-  background-color: #fdf2e9;
-  padding: 9.6rem 0;
-}
-
-.hero {
-  max-width: 130rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
-}
-
+/* **************************************** */
+/* General reusable components */
+/* **************************************** */
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
@@ -82,12 +58,6 @@ body {
   color: #333;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
-}
-
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
 }
 
 .btn:link,
@@ -128,13 +98,69 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+/* **************************************** */
+/* Header */
+/* **************************************** */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  /* Becuase we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/* **************************************** */
+/* Hero Section */
+/* **************************************** */
+
+.test {
+  background-color: red;
+  /* width: 1000px; */
+  max-width: 1000px;
+  /* if the container width is larger than the specified max-width then the width of the element is equal the value that was specified for max-width however, if the container width is less than the specified max width then the width of the element will be 100% of the container element width */
+
+  max-width: 50rem;
+  padding: 4rem;
+  color: #fff;
+  font-size: 2rem;
+  /* default: 1rem = 16px ==> 50rem=800px */
+}
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.9rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
 .hero-img {
   width: 100%;
   /* used for responsiveness */
-}
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
 }
 
 .delivered-meals {
